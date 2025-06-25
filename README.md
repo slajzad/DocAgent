@@ -1,4 +1,4 @@
-# LLAgent Orchestrator – Tester Edition
+# DocAgent – Tester Edition
 
 A lightweight, offline-ready LLM assistant tailored for infrastructure documentation.
 
@@ -28,8 +28,8 @@ A lightweight, offline-ready LLM assistant tailored for infrastructure documenta
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourorg/llagent-orchestrator.git
-cd llagent-orchestrator
+git clone https://github.com/slajzad/DocAgent.git
+cd DocAgent
 cp .env.example .env
 
 # Install Docker Compose (if not already installed)
@@ -46,7 +46,7 @@ sudo docker-compose up --build
 
 ```bash
 # Pull the Mistral model into the Ollama container
-docker exec -it llagent-orchestrator-main_ollama_1 ollama pull mistral
+docker exec -it docagent_ollama_1  ollama pull mistral
 
 # Confirm the container is running (optional)
 docker ps
@@ -61,7 +61,7 @@ Then visit: [http://localhost:8000/dashboard](http://localhost:8000/dashboard)
 **CLI Task**:
 
 ```bash
-python3 cli/manage.py --agent xen_config --input "How do I configure a VM?"
+python3 cli/manage.py --agent doc_agent --input "How do I configure a VM?"
 ```
 
 **REPL Mode**:
@@ -76,7 +76,7 @@ python3 cli/repl.py
 
 ```
 ├── agents/
-│   └── xen_config/
+│   └── doc_agent/
 │       ├── config.yaml
 │       ├── docs/*.txt
 │       └── agent.py
@@ -106,7 +106,7 @@ rm logs/agent_log.jsonl
 
 ## ⚖️ Licensing Notice
 
-LLAgent Orchestrator is released under the **MIT License**. It integrates third-party tools like **Ollama** and **Mistral**, which are subject to their respective licenses.
+DocAgent is released under the **MIT License**. It integrates third-party tools like **Ollama** and **Mistral**, which are subject to their respective licenses.
 
 Ollama is source-available and must be downloaded separately via Docker or their official site. This project does not distribute or modify Ollama binaries.
 
