@@ -1,0 +1,14 @@
+<ul style="list-style: none; padding-left: 0;">
+  {% for entry in history %}
+    <li style="margin-bottom: 0.4em;">
+      <span style="color: var(--text); opacity: 0.6; font-size: 0.85em;">
+        🕒 {{ entry.timestamp }}
+      </span>
+      &nbsp;—
+      <span style="color: #00bfa5; font-weight: bold;">
+        {{ entry.agent }}
+      </span>:
+      <span style="color: var(--text);">{{ entry.input }}</span>
+    </li>
+  {% endfor %}
+</ul>

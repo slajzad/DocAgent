@@ -1,0 +1,5 @@
+name: xen_config
+description: Answers questions regarding documentation
+use_vector: true
+model: mistral
+doc_path: agents/doc_agent/docs
