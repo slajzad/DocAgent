@@ -1,4 +1,4 @@
-name: xen_config
+name: doc_agent
 description: Answers questions regarding documentation
 use_vector: true
 model: mistral
