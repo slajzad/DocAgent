@@ -58,6 +58,9 @@ Then visit: [http://localhost:8000/dashboard](http://localhost:8000/dashboard)
 
 ## 🧪 Usage
 
+** Place you documents in agents/doc_agent/docs
+
+
 **CLI Task**:
 
 ```bash
